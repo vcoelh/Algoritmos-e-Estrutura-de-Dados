@@ -36,6 +36,18 @@ x[2] = 7;
 
 int* y = (int*) malloc(sizeof(int)*3);
 
+y[0] = 4;
+y[1] = 5;
+y[2] = 6;
+
+printf("\ny0: %i, y1: %i, y2: %i\n\n", y[0],y[1],y[2]);
+
+printf("&y: %p, y: %p, *y: %i\n\n", &y,y, *y);
+
+// *y= *x;
+
+free(y);
+y = (int*) x;
 
     return 0;
 }
